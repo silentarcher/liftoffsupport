@@ -1,0 +1,12 @@
+{
+  "name": "liftoffsupport",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/moztemo/liftoffsupport.git"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
