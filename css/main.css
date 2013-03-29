@@ -5,7 +5,7 @@
    ========================================================================== */
 
 a {
-  color: #9d9d9d;
+  color: #afafaf;
   outline: 0;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-out;
@@ -16,11 +16,11 @@ a {
 }
 
 a:visited {
-  color: #9d9d9d;
+  color: #afafaf;
 }
 
 a:active {
-  color: #9d9d9d;
+  color: #afafaf;
 }
 
 a:hover {
@@ -133,7 +133,7 @@ body {
 }
 
 .header .logo-area a {
-  background: transparent url(../img/logos/example_logo.png) no-repeat scroll 0 8px;
+  background: transparent url(../img/logos/logo.png) no-repeat scroll 0 0;
   color: #2f3c4f;
   display: block;
 }
@@ -142,7 +142,7 @@ body {
   font-size: 72px;
   font-weight: 300;
   line-height: 0.9;
-  margin: 0 0 0 124px;
+  margin: 0 0 0 156px;
 }
 
 .header .logo-area cite {
@@ -151,7 +151,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
-  margin: 0 0 0 124px;
+  margin: 0 0 0 156px;
   padding-left: 4px;
 }
 
@@ -163,7 +163,7 @@ body {
   float: right;
   letter-spacing: -1px;
   line-height: 1.8;
-  margin: 100px 100px 0 0;
+  margin: 100px 90px 0 0;
   text-align: right;
   width: 450px;
 }
@@ -178,11 +178,11 @@ body {
    ========================================================================== */
 
 .section .left {
-  margin-left: 120px;
+  margin-left: 140px;
 }
 
 .section .right {
-  margin-right: 160px;
+  margin-right: 180px;
 }
 
 .section .info-area {
@@ -245,41 +245,13 @@ body {
   padding-right: 12px;
 }
 
-.scroll-btn {
-  height: 51px;
-  position: fixed;
-  bottom: 0;
-  right: 80px;
-  width: 45px;
-}
-
-.scroll-btn a {
-  background: #161614 url(../img/icons/small/down_arrow.png) no-repeat scroll 4px 8px;
-  border-radius: 3px 3px 0 0;
-  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
-  display: block;
-  height: 51px;
-  opacity: 0.82;
-  width: 45px;
-  -webkit-transition: opacity 0.16s ease-out;
-  -moz-transition: opacity 0.16s ease-out;
-  -ms-transition: opacity 0.16s ease-out;
-  -o-transition: opacity 0.16s ease-out;
-  transition: opacity: 0.16s ease-out;
-}
-
-.scroll-btn a:hover {
-  box-shadow: 0;
-  opacity: 0.7;
-}
-
 /* ==========================================================================
    Footer
    ========================================================================== */
 
 .footer {
   background: #171717 none repeat scroll 0 0;
-  color: #9d9d9d;
+  color: #afafaf;
   font-size: 12px;
   height: 290px;
   padding: 20px 0;
@@ -292,7 +264,7 @@ body {
 }
 
 .footer h5 {
-  color: #9d9d9d;
+  color: #afafaf;
   font-size: 16px;
   letter-spacing: 1px;
 }
