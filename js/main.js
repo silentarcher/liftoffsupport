@@ -1,4 +1,4 @@
-;(function(window, undefined) {
+;(function($, _, window, undefined) {
   var homeView = Backbone.View.extend({
 
   })
@@ -8,7 +8,7 @@
   })
 
   var pricingView = Backbone.View.extend({
-    
+
   })
 
   var AppRouter = Backbone.Router.extend({
@@ -19,19 +19,20 @@
     },
 
     home: function() {
-      console.log('render home')
+      console.log('home route')
     },
 
     locations: function() {
-      console.log('render locations')
+      console.log('locations route')
     },
 
     pricing: function() {
-      console.log('render pricing')
+      console.log('pricing route')
     }
   })
 
   var appRouter = new AppRouter()
+
   console.log('start backbone')
   Backbone.history.start({pushState: false})
-})(window);
+})(jQuery, lodash, window);
