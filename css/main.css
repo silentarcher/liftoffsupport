@@ -94,7 +94,7 @@ body {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   font-family: "Source Sans Pro", arial, sans-serif;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 0.88;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -183,7 +183,7 @@ body {
 }
 
 .header .logo-area a h1 {
-  margin: 0 0 0 156px;
+  margin: 0 0 0 160px;
   font-size: 72px;
   font-weight: 300;
   line-height: 0.9;
@@ -191,7 +191,7 @@ body {
 
 .header .logo-area cite {
   display: block;
-  margin: 0 0 0 156px;
+  margin: 0 0 0 160px;
   padding-left: 4px;
   font-style: normal;
   font-size: 20px;
@@ -309,7 +309,7 @@ body {
 
 .footer {
   height: 290px;
-  padding: 20px 0;
+  padding: 20px 0 30px;
   background: #171717 url(../img/backgrounds/gray_bg.jpg) repeat scroll 0 0;
   color: #b6b6b6;
   font-size: 12px;
@@ -343,12 +343,26 @@ body {
   list-style-type: none;
 }
 
+.footer li {
+  line-height: 2.6;
+}
+
 .footer .special {
   margin: 0;
   padding-top: 18px;
   border-top: 1px solid #333;
 }
 
-.footer li {
-  line-height: 2.6;
+.footer .backbonejs-icon, .footer .nodejs-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.footer .backbonejs-icon {
+  background: transparent url(../img/icons/small/backbonejs.png) no-repeat scroll 0 0;
+}
+
+.footer .nodejs-icon {
+  background: transparent url(../img/icons/small/nodejs.ico) no-repeat scroll 0 0;
 }
