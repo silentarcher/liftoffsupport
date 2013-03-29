@@ -5,7 +5,7 @@
    ========================================================================== */
 
 a {
-  color: #afafaf;
+  color: #b2b2b2;
   outline: 0;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-out;
@@ -16,11 +16,11 @@ a {
 }
 
 a:visited {
-  color: #afafaf;
+  color: #b2b2b2;
 }
 
 a:active {
-  color: #afafaf;
+  color: #b2b2b2;
 }
 
 a:hover {
@@ -56,7 +56,8 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 body {
-  background: #ddd none repeat scroll 0 0;
+  margin: 0;
+  background: #e7eff2 url(../img/backgrounds/blue_bg.png) repeat scroll 0 0;
   color: #555555;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, arial, sans-serif;
   font-weight: 400;
@@ -64,21 +65,19 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  margin: 0;
   text-align: center; /* IE */
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .container {
+  width: 940px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: left;
-  width: 940px;
 }
 
 .section {
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3);
-  height: 520px;
+  height: 470px;
   overflow: hidden;
 }
 
@@ -87,16 +86,16 @@ body {
    ========================================================================== */
 
 .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   background: #161614 none repeat scroll 0 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-family: "Source Sans Pro", arial, sans-serif;
   font-weight: 400;
-  position: fixed;
-  left: 0;
-  top: 0;
-  opacity: 0.94;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  width: 100%;
+  opacity: 0.9;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .nav ul {
@@ -106,10 +105,10 @@ body {
 }
 
 .nav ul li {
-  border-right: 1px solid #262626;
   display: inline;
-  line-height: 3.6;
   padding: 0 14px 0 10px;
+  border-right: 1px solid #262626;
+  line-height: 3.6;
 }
 
 .nav ul li.last {
@@ -122,9 +121,10 @@ body {
 }
 
 .header {
-  background: #e7eff2 none repeat scroll 0 0;
   height: 400px;
   margin-top: 40px;
+  background: #e7eff2 url(../img/backgrounds/blue_bg.png) repeat scroll 0 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .header .logo-area {
@@ -133,39 +133,39 @@ body {
 }
 
 .header .logo-area a {
+  display: block;
   background: transparent url(../img/logos/logo.png) no-repeat scroll 0 0;
   color: #2f3c4f;
-  display: block;
 }
 
 .header .logo-area a h1 {
+  margin: 0 0 0 156px;
   font-size: 72px;
   font-weight: 300;
   line-height: 0.9;
-  margin: 0 0 0 156px;
 }
 
 .header .logo-area cite {
   display: block;
+  margin: 0 0 0 156px;
+  padding-left: 4px;
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
-  margin: 0 0 0 156px;
-  padding-left: 4px;
 }
 
 .header .mission-statement {
+  float: right;
+  margin: 100px 80px 0 0;
+  width: 450px;
   color: #3d4e66;
   font-family: "Source Sans Pro", arial, sans-serif;
   font-weight: 300;
   font-size: 24px;
-  float: right;
   letter-spacing: -1px;
   line-height: 1.8;
-  margin: 100px 90px 0 0;
   text-align: right;
-  width: 450px;
 }
 
 .header .mission-statement p {
@@ -187,61 +187,75 @@ body {
 
 .section .info-area {
   font-size: 15px;
-  margin-top: 40px;
+  margin-top: 26px;
   width: 260px;
 }
 
 .section .info-area h2 {
+  margin-bottom: 14px;
   font-size: 28px;
+  line-height: 1.4;
+}
+
+.section .info-area div {
+  font-size: 17px;
+  font-style: italic;
 }
 
 .section-1 {
   background: #2f2f2f none repeat scroll 0 0;
-  color: #c6c6c6;
+  color: #cacaca;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.4);
 }
 
 .section-1 img {
-  margin-top: 78px;
+  margin-top: 68px;
   padding-right: 24px;
 }
 
 .section-2 {
   background: #37a5e4 none repeat scroll 0 0;
   color: #1c1c1c;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .section-2 img {
-  margin-top: 114px;
+  margin-top: 104px;
   padding-left: 28px;
 }
 
 .section-3 {
   background: #f6f2e7 none repeat scroll 0 0;
   color: #393939;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .section-3 img {
-  margin-top: 120px;
+  margin-top: 110px;
   padding-right: 26px;
 }
 
 .section-4 {
   background: #171717 none repeat scroll 0 0;
-  color: #b9b9b9;
+  color: #bbbbbb;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.6);
 }
 
 .section-4 img {
-  margin-top: 90px;
+  margin-top: 80px;
   padding-left: 44px;
 }
 
 .section-5 {
   background: #72c0b0 none repeat scroll 0 0;
   color: #161616;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.6);
 }
 
 .section-5 img {
-  margin-top: 108px;
+  margin-top: 98px;
   padding-right: 12px;
 }
 
@@ -250,21 +264,26 @@ body {
    ========================================================================== */
 
 .footer {
-  background: #171717 none repeat scroll 0 0;
-  color: #afafaf;
-  font-size: 12px;
   height: 290px;
   padding: 20px 0;
+  background: #171717 url(../img/backgrounds/gray_bg.jpg) repeat scroll 0 0;
+  color: #b2b2b2;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.3);
 }
 
 .footer .footer-col {
   float: left;
-  margin-left: 40px;
   width: 250px;
+  margin-left: 50px;
 }
 
 .footer h5 {
-  color: #afafaf;
+  margin: 26px 0 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #111;
+  color: #b2b2b2;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -274,7 +293,16 @@ body {
 }
 
 .footer ul {
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px solid #333;
   list-style-type: none;
+}
+
+.footer .special {
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #333;
 }
 
 .footer li {
