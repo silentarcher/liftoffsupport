@@ -5,26 +5,26 @@
    ========================================================================== */
 
 a {
-  color: #b6b6b6;
+  color: #b8b8b8;
   outline: 0;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -ms-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  transition: color: 0.2s ease-out;
+  -webkit-transition: color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out;
+  -ms-transition: color 0.15s ease-out;
+  -o-transition: color 0.15s ease-out;
+  transition: color: 0.15s ease-out;
 }
 
 a:visited {
-  color: #b6b6b6;
+  color: #b8b8b8;
 }
 
 a:active {
-  color: #b6b6b6;
+  color: #b8b8b8;
 }
 
 a:hover {
-  color: #e4f5f4;
+  color: #eafaf9;
   text-decoration: none;
 }
 
@@ -130,13 +130,13 @@ body {
   left: 0;
   display: block;
   background: transparent url(../img/icons/small/nav_colored.png) no-repeat scroll 0 0;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  -webkit-transition: opacity .2s ease-out;
-  -moz-transition: opactiy .2s ease-out;
-  -ms-transition: opacity .2s ease-out;
-  -o-transition: opacity .2s ease-out;
-  transition: opacity .2s ease-out;
+  filter: alpha(opacity=65);
+  opacity: 0.65;
+  -webkit-transition: opacity .15s ease-out;
+  -moz-transition: opactiy .15s ease-out;
+  -ms-transition: opacity .15s ease-out;
+  -o-transition: opacity .15s ease-out;
+  transition: opacity .15s ease-out;
 }
 
 .nav ul li a.locations span {
@@ -311,7 +311,7 @@ body {
   height: 290px;
   padding: 20px 0 30px;
   background: #171717 url(../img/backgrounds/gray_bg.jpg) repeat scroll 0 0;
-  color: #b6b6b6;
+  color: #b8b8b8;
   font-size: 12px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.3);
@@ -327,7 +327,7 @@ body {
   margin: 26px 0 0;
   padding-bottom: 22px;
   border-bottom: 1px solid #111;
-  color: #b6b6b6;
+  color: #b8b8b8;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -357,13 +357,13 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  -webkit-transition: opacity .2s ease-out;
-  -moz-transition: opactiy .2s ease-out;
-  -ms-transition: opacity .2s ease-out;
-  -o-transition: opacity .2s ease-out;
-  transition: opacity .2s ease-out;
+  filter: alpha(opacity=65);
+  opacity: 0.65;
+  -webkit-transition: opacity .15s ease-out;
+  -moz-transition: opactiy .15s ease-out;
+  -ms-transition: opacity .15s ease-out;
+  -o-transition: opacity .15s ease-out;
+  transition: opacity .15s ease-out;
 }
 
 .footer a.backbonejs-icon {
