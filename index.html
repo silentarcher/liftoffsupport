@@ -13,139 +13,183 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.1.1/lodash.compat.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.2/handlebars.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/money.min.js"></script>
+
+    <script id="nav" type="text/x-handlebars-template">
+      <div class="nav">
+        <div class="container">
+          {{#if isHome}}
+          <ul class="left">
+            <li><a href="#section-1">Small Business</a></li>
+            <li><a href="#section-2">Home Support</a></li>
+            <li><a href="#section-3">Home Networking</a></li>
+            <li><a href="#section-4">Sales</a></li>
+            <li class="last"><a href="#section-5">Home Theater</a></li>
+          </ul>
+          {{else}}
+            <a class="logo" href="#"><span></span><h1>Liftoff Computer Services</h1></a>
+          {{/if}}
+          <ul class="right">
+            <li><a class="icon locations" href="#!/locations"><span></span>Locations</a></li>
+            <li><a class="icon pricing" href="#!/pricing"><span></span>Pricing</a></li>
+            <li class="last"><a class="icon contact" href="mailto:liftoffsupport@gmail.com"><span></span>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="home" type="text/x-handlebars-template">
+      <div class="section header">
+        <div class="container">
+          <div class="logo-area">
+            <a href="/">
+              <h1>liftoff</h1>
+              <cite>computer services llc</cite>
+            </a>
+          </div>
+          <div class="mission-statement">
+            <p>Serving the computer hardware and networking needs of individuals and small business with a commitment to quality service and support</p>
+          </div>
+        </div>
+      </div>
+      <div class="section section-1">
+        <a name="section-1"></a>
+        <div class="container">
+          <div class="info-area left">
+            <h2>Small business services</h2>
+            <div>Smart network solutions</div>
+            <p>Specializing in network security consulting, server upgrades, firewall configuration, email and file servers and more. Let us handle the details so you can get back to using the tools you need without the headache. Contact us for service inquiries.</p>
+          </div>
+          <div class="img-area right">
+            <img src="img/icons/large/server.png">
+          </div>
+        </div>
+      </div>
+      <div class="section section-2">
+        <a name="section-2"></a>
+        <div class="container">
+          <div class="img-area left">
+            <img src="img/icons/large/secure_user.png">
+          </div>
+          <div class="info-area right">
+            <h2>Residential computer support</h2>
+            <div>Trusted experience</div>
+            <p>Supporting residences with desktop and laptop computer repair, tablet and smartphone configuration, and application installation and support. We are experts in the removal of viruses and spyware, recovery of files on dead or nonworking computers, operating system repair and upgrades, backup system implementation and more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section section-3">
+        <a name="section-3"></a>
+        <div class="container">
+          <div class="info-area left">
+            <h2>Home network setup and support</h2>
+            <div>Comprehensive wireless solutions</div>
+            <p>Providing a wireless network solution for your home, we can transform your space into a wireless office or entertainment powerhouse. Laptops, work stations, tablets, printers, automated backup systems and advanced file sharing and storage solutions - securely and wirelessly connected and off your mind.</p>
+          </div>
+          <div class="img-area right">
+            <img src="img/icons/large/wifi.png">
+          </div>
+        </div>
+      </div>
+      <div class="section section-4">
+        <a name="section-4"></a>
+        <div class="container">
+          <div class="img-area left">
+            <img src="img/icons/large/smartphone.png">
+          </div>
+          <div class="info-area right">
+            <h2>Computer and<br>device sales</h2>
+            <div>New tools and toys</div>
+            <p>Whether you need a new laptop, tablet or smartphone, we can help you find the device that's right for you. Need something with a little more power? We build custom work stations for video and music production, and kick-ass<br>gaming rigs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section section-5">
+        <a name="section-5"></a>
+        <div class="container">
+          <div class="info-area left">
+            <h2>Home theater</h2>
+            <div>Living room at your fingertips</div>
+            <p>Let us help you unlock the full potential of your home entertainment system. We'll help you seemlessly and wirelessly connect your devices so you can watch Hulu, Netflix and YouTube from your tv, connected to a digital surround system all controlled by your tablet, laptop or universal remote.</p>
+          </div>
+          <div class="img-area right">
+            <img src="img/icons/large/tv.png">
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="pricing" type="text/x-handlebars-template">
+      <div class="content-wrapper">
+        <div class="content pricing">
+          <div class="container">
+            pricing
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="locations" type="text/x-handlebars-template">
+      <div class="content-wrapper">
+        <div class="content locations">
+          <div class="container">      
+            <div class="info">
+              <p>
+                Serving the areas of Wenatchee
+              </p>
+            </div>
+            <div id="map">
+              <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=wenatchee,+wa&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.399473,0.513611&amp;ie=UTF8&amp;hq=&amp;hnear=Wenatchee,+Chelan,+Washington&amp;t=m&amp;ll=47.434242,-120.310936&amp;spn=0.055737,0.109863&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=wenatchee,+wa&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.399473,0.513611&amp;ie=UTF8&amp;hq=&amp;hnear=Wenatchee,+Chelan,+Washington&amp;t=m&amp;ll=47.434242,-120.310936&amp;spn=0.055737,0.109863&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="footer" type="text/x-handlebars-template">
+      <div class="section footer">
+        <div class="container">
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#section-1">Small business services</a></li>
+              <li><a href="#section-2">Residential computer support</a></li>
+              <li><a href="#section-3">Home network setup and support</a></li>
+              <li><a href="#section-4">Computer and device sales</a></li>
+              <li><a href="#section-5">Home theater</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="mailto:liftoffsupport@gmail.com">liftoffsupport@gmail.com</a></li>
+              <li><a href="tel:5098600927">509.860.0927</a></li>
+              <li><a href="/#!/locations">Locations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Liftoff Computer Services</h5>
+            <p class="special">Serving the computer hardware and networking needs of individuals and small business with a commitment to quality service and support.</p>
+            <p>
+              <cite>&copy; 2013 Liftoff Computer Services, LLC</cite>
+            </p>
+            <p>
+              Design by <a href="https://twitter.com/gregstallings">@gregstallings</a>/<a href="https://twitter.com/npalaniuk">@npalaniuk</a><br>
+              Running &nbsp; <a class="nodejs-icon" href="http://nodejs.org" target="_blank"></a> &nbsp; <a class="backbonejs-icon" href="http://backbonejs.org" target="_blank"></a>, <a href="http://www.visualpharm.com/" target="_blank">VisualPharm</a> icons
+            </p>
+          </div>
+        </div>
+      </div>
+    </script>
+
     <script src="js/main.js"></script>
   </head>
   <body>
-    <div class="nav">
-      <div class="container">
-        <ul class="left">
-          <li><a href="#section-1">Small Business</a></li>
-          <li><a href="#section-2">Home Support</a></li>
-          <li><a href="#section-3">Home Networking</a></li>
-          <li><a href="#section-4">Sales</a></li>
-          <li class="last"><a href="#section-5">Home Theater</a></li>
-        </ul>
-        <ul class="right">
-          <li><a class="icon locations" href="#!/locations"><span></span>Locations</a></li>
-          <li><a class="icon pricing" href="#!/pricing"><span></span>Pricing</a></li>
-          <li class="last"><a class="icon contact" href="mailto:liftoffsupport@gmail.com"><span></span>Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="section header">
-      <div class="container">
-        <div class="logo-area">
-          <a href="/">
-            <h1>liftoff</h1>
-            <cite>computer services llc</cite>
-          </a>
-        </div>
-        <div class="mission-statement">
-          <p>Serving the computer hardware and networking needs of individuals and small business with a commitment to quality service and support</p>
-        </div>
-      </div>
-    </div>
-    <div class="section section-1">
-      <a name="section-1"></a>
-      <div class="container">
-        <div class="info-area left">
-          <h2>Small business services</h2>
-          <div>Smart network solutions</div>
-          <p>Specializing in network security consulting, server upgrades, firewall configuration, email and file servers and more. Let us handle the details so you can get back to using the tools you need without the headache. Contact us for service inquiries.</p>
-        </div>
-        <div class="img-area right">
-          <img src="img/icons/large/server.png">
-        </div>
-      </div>
-    </div>
-    <div class="section section-2">
-      <a name="section-2"></a>
-      <div class="container">
-        <div class="img-area left">
-          <img src="img/icons/large/secure_user.png">
-        </div>
-        <div class="info-area right">
-          <h2>Residential computer support</h2>
-          <div>Trusted experience</div>
-          <p>Supporting residences with desktop and laptop computer repair, tablet and smartphone configuration, and application installation and support. We are experts in the removal of viruses and spyware, recovery of files on dead or nonworking computers, operating system repair and upgrades, backup system implementation and more.</p>
-        </div>
-      </div>
-    </div>
-    <div class="section section-3">
-      <a name="section-3"></a>
-      <div class="container">
-        <div class="info-area left">
-          <h2>Home network setup and support</h2>
-          <div>Comprehensive wireless solutions</div>
-          <p>Providing a wireless network solution for your home, we can transform your space into a wireless office or entertainment powerhouse. Laptops, work stations, tablets, printers, automated backup systems and advanced file sharing and storage solutions - securely and wirelessly connected and off your mind.</p>
-        </div>
-        <div class="img-area right">
-          <img src="img/icons/large/wifi.png">
-        </div>
-      </div>
-    </div>
-    <div class="section section-4">
-      <a name="section-4"></a>
-      <div class="container">
-        <div class="img-area left">
-          <img src="img/icons/large/smartphone.png">
-        </div>
-        <div class="info-area right">
-          <h2>Computer and<br>device sales</h2>
-          <div>New tools and toys</div>
-          <p>Whether you need a new laptop, tablet or smartphone, we can help you find the device that's right for you. Need something with a little more power? We build custom work stations for video and music production, and kick-ass<br>gaming rigs.</p>
-        </div>
-      </div>
-    </div>
-    <div class="section section-5">
-      <a name="section-5"></a>
-      <div class="container">
-        <div class="info-area left">
-          <h2>Home theater</h2>
-          <div>Living room at your fingertips</div>
-          <p>Let us help you unlock the full potential of your home entertainment system. We'll help you seemlessly and wirelessly connect your devices so you can watch Hulu, Netflix and YouTube from your tv, connected to a digital surround system all controlled by your tablet, laptop or universal remote.</p>
-        </div>
-        <div class="img-area right">
-          <img src="img/icons/large/tv.png">
-        </div>
-      </div>
-    </div>
-    <div class="section footer">
-      <div class="container">
-        <div class="footer-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="#section-1">Small business services</a></li>
-            <li><a href="#section-2">Residential computer support</a></li>
-            <li><a href="#section-3">Home network setup and support</a></li>
-            <li><a href="#section-4">Computer and device sales</a></li>
-            <li><a href="#section-5">Home theater</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contact</h5>
-          <ul>
-            <li><a href="mailto:liftoffsupport@gmail.com">liftoffsupport@gmail.com</a></li>
-            <li><a href="tel:5098600927">509.860.0927</a></li>
-            <li><a href="/#!/locations">Locations</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Liftoff Computer Services</h5>
-          <p class="special">Serving the computer hardware and networking needs of individuals and small business with a commitment to quality service and support.</p>
-          <p>
-            <cite>&copy; 2013 Liftoff Computer Services, LLC</cite>
-          </p>
-          <p><br></p>
-          <p>
-            Design by <a href="https://twitter.com/gregstallings">@gregstallings</a>
-            , running &nbsp; <a class="nodejs-icon" href="http://nodejs.org" target="_blank"></a> &nbsp; <a class="backbonejs-icon" href="http://backbonejs.org" target="_blank"></a><br>
-            Icons by <a href="http://www.visualpharm.com/" target="_blank">VisualPharm</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <script src="js/scroll.js"></script>
-    <script src="js/money.min.js"></script>
+    <div id="container"></div>
+    <noscript>
+      <h4>JavaScript must be enabled in your browser in order to view this site.</h4>
+    </noscript>
   </body>
 </html>
