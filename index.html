@@ -14,18 +14,17 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.1.1/lodash.compat.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.2/handlebars.min.js"></script>
-    <script src="js/scroll.js"></script>
 
     <script id="nav" type="text/x-handlebars-template">
       <div class="nav">
         <div class="container">
           {{#if isHome}}
           <ul class="left">
-            <li><a href="#section-1">Small Business</a></li>
-            <li><a href="#section-2">Home Support</a></li>
-            <li><a href="#section-3">Home Networking</a></li>
-            <li><a href="#section-4">Sales</a></li>
-            <li class="last"><a href="#section-5">Home Theater</a></li>
+            <li><a href="#small-business">Small Business</a></li>
+            <li><a href="#home-support">Home Support</a></li>
+            <li><a href="#home-networking">Home Networking</a></li>
+            <li><a href="#sales">Sales</a></li>
+            <li class="last"><a href="#home-theater">Home Theater</a></li>
           </ul>
           {{else}}
             <a class="logo" href="#"><span></span><h2>Liftoff Computer Services</h2></a>
@@ -54,7 +53,7 @@
         </div>
       </div>
       <div class="section section-1">
-        <a name="section-1"></a>
+        <div class="small-business"></div>
         <div class="container">
           <div class="info-area left">
             <h2>Small business services</h2>
@@ -67,7 +66,7 @@
         </div>
       </div>
       <div class="section section-2">
-        <a name="section-2"></a>
+        <div class="home-support"></div>
         <div class="container">
           <div class="img-area left">
             <img src="img/icons/large/secure_user.png">
@@ -80,7 +79,7 @@
         </div>
       </div>
       <div class="section section-3">
-        <a name="section-3"></a>
+        <div class="home-networking"></div>
         <div class="container">
           <div class="info-area left">
             <h2>Home network setup and support</h2>
@@ -93,7 +92,7 @@
         </div>
       </div>
       <div class="section section-4">
-        <a name="section-4"></a>
+        <div class="sales"></div>
         <div class="container">
           <div class="img-area left">
             <img src="img/icons/large/smartphone.png">
@@ -106,7 +105,7 @@
         </div>
       </div>
       <div class="section section-5">
-        <a name="section-5"></a>
+        <div class="home-theater"></div>
         <div class="container">
           <div class="info-area left">
             <h2>Home theater</h2>
@@ -179,11 +178,11 @@
           <div class="footer-col">
             <h5>Services</h5>
             <ul>
-              <li><a href="#section-1">Small business services</a></li>
-              <li><a href="#section-2">Residential computer support</a></li>
-              <li><a href="#section-3">Home network setup and support</a></li>
-              <li><a href="#section-4">Computer and device sales</a></li>
-              <li><a href="#section-5">Home theater</a></li>
+              <li><a href="#small-business">Small business services</a></li>
+              <li><a href="#home-support">Residential computer support</a></li>
+              <li><a href="#home-networking">Home network setup and support</a></li>
+              <li><a href="#sales">Computer and device sales</a></li>
+              <li><a href="#home-theater">Home theater</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -191,7 +190,7 @@
             <ul>
               <li><a href="mailto:liftoffsupport@gmail.com">liftoffsupport@gmail.com</a></li>
               <li><a href="tel:5098600927">509.860.0927</a></li>
-              <li><a href="/#!/locations">Locations</a></li>
+              <li><a href="#!/locations">Locations</a></li>
             </ul>
           </div>
           <div class="footer-col">
