@@ -29,7 +29,7 @@
             <li class="last"><a href="#section-5">Home Theater</a></li>
           </ul>
           {{else}}
-            <a class="logo" href="#"><span></span><h1>Liftoff Computer Services</h1></a>
+            <a class="logo" href="#"><span></span><h2>Liftoff Computer Services</h2></a>
           {{/if}}
           <ul class="right">
             <li><a class="icon locations" href="#!/locations"><span></span>Locations</a></li>
@@ -121,28 +121,37 @@
       </div>
     </script>
 
-    <script id="pricing" type="text/x-handlebars-template">
+    <script id="locations" type="text/x-handlebars-template">
       <div class="content-wrapper">
-        <div class="content pricing">
+        <div class="content locations clearfix">
           <div class="container">
-            pricing
+            <div class="info">
+              <h1>Where you at?</h1>
+              <h5>We come to you.</h5>
+              <ul>
+                <li>Wenatchee, WA</li>
+                <li>East Wenatchee, WA</li>
+                <li>Sunnyslope, WA</li>
+                <li>Malaga, WA</li>
+              </ul>
+              <p>
+                Not on this list?<br>
+                Contact us for special requests.
+              </p>
+            </div>
+            <div id="map">
+              <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=vista+place,+wenatchee,+wa&amp;aq=&amp;sll=47.41264,-120.334196&amp;sspn=0.009918,0.017467&amp;ie=UTF8&amp;hq=&amp;hnear=Vista+Pl,+Wenatchee,+Chelan,+Washington+98801&amp;t=m&amp;ll=47.41264,-120.33411&amp;spn=0.055759,0.109863&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=vista+place,+wenatchee,+wa&amp;aq=&amp;sll=47.41264,-120.334196&amp;sspn=0.009918,0.017467&amp;ie=UTF8&amp;hq=&amp;hnear=Vista+Pl,+Wenatchee,+Chelan,+Washington+98801&amp;t=m&amp;ll=47.41264,-120.33411&amp;spn=0.055759,0.109863&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </div>
           </div>
         </div>
       </div>
     </script>
 
-    <script id="locations" type="text/x-handlebars-template">
+    <script id="pricing" type="text/x-handlebars-template">
       <div class="content-wrapper">
-        <div class="content locations">
-          <div class="container">      
-            <div class="info">
-              <p>
-                Serving the areas of Wenatchee
-              </p>
-            </div>
-            <div id="map">
-              <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=wenatchee,+wa&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.399473,0.513611&amp;ie=UTF8&amp;hq=&amp;hnear=Wenatchee,+Chelan,+Washington&amp;t=m&amp;ll=47.434242,-120.310936&amp;spn=0.055737,0.109863&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=wenatchee,+wa&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.399473,0.513611&amp;ie=UTF8&amp;hq=&amp;hnear=Wenatchee,+Chelan,+Washington&amp;t=m&amp;ll=47.434242,-120.310936&amp;spn=0.055737,0.109863&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-            </div>
+        <div class="content pricing">
+          <div class="container">
+            pricing
           </div>
         </div>
       </div>
