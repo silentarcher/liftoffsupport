@@ -129,11 +129,13 @@
       console.log('locations route')
       var locationsView = new LocationsView()
       locationsView.render()
+      window.scroll(0, 0)
     },
     pricing: function() {
       console.log('pricing route')
       var pricingView = new PricingView()
       pricingView.render()
+      window.scroll(0, 0)
     }
   })
 

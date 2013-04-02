@@ -110,7 +110,7 @@ body {
 /* Not used on home page since sticky footer is not needed there */
 .content {
   /* Bottom padding is footer height + nav height - this top padding */
-  padding: 80px 0 360px 0;
+  padding: 90px 0 370px 0;
 }
 
 /* The auto-padding container */
@@ -387,10 +387,15 @@ body {
    Locations
    ========================================================================== */
 
+.locations.content {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
 .locations .info {
   float: left;
   width: 280px;
-  font-size: 24px;
 }
 
 .locations h1 {
@@ -432,8 +437,45 @@ body {
    Pricing
    ========================================================================== */
 
-.pricing {
+.pricing.content {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
 
+.pricing .wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 10px 34px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.pricing #price-us {
+  font-size: 92px;
+  line-height: 1.2;
+}
+
+.pricing #price-us span {
+  font-size: 48px;
+}
+
+.pricing .standard {
+  font-size: 1.6em;
+}
+
+.pricing .other-prices {
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.pricing .price-other {
+  float: left;
+  width: 80px;
+  margin-right: 12px;
+  font-size: 48px;
 }
 
 /* ==========================================================================
